@@ -65,21 +65,21 @@ export function Nav() {
                 }
 
             </Link>
-            <ul className={styles.navitems}>
-                <li>
-                    <Link href={"/courses"}>
-                        <a className={styles.navitem}>Certifications</a>
-                    </Link>
-                </li>
-                <li>
-                    <a className={styles.navitem} target="_blank" href="https://github.com/Aviisek" rel="noreferrer">Github</a>
-                </li>
-                <li>
-                    <a className={styles.navitem} target="_blank" href="https://www.linkedin.com/in/abhishek-k-513149124/"
-                       rel="noreferrer">LinkedIn
-                    </a>
-                </li>
-            </ul>
+            {/*<ul className={styles.navitems}>*/}
+            {/*    <li>*/}
+            {/*        <Link href={"/courses"}>*/}
+            {/*            <a className={styles.navitem}>Certifications</a>*/}
+            {/*        </Link>*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*        <a className={styles.navitem} target="_blank" href="https://github.com/Aviisek" rel="noreferrer">Github</a>*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*        <a className={styles.navitem} target="_blank" href="https://www.linkedin.com/in/abhishek-k-513149124/"*/}
+            {/*           rel="noreferrer">LinkedIn*/}
+            {/*        </a>*/}
+            {/*    </li>*/}
+            {/*</ul>*/}
         </nav>
     )
 }
