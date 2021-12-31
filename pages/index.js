@@ -25,6 +25,7 @@ export default function Home() {
           />
       </Head>
       <main className={styles.main}>
+          <Nav />
           <Overlay/>
           <Suspense fallback={null}>
               <Canva />

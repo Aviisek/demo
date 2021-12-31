@@ -1,6 +1,7 @@
 import {useCallback, useEffect, useState} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import {Nav} from "../../components/Overlay";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,6 +76,7 @@ const Courses = () => {
 
     if(isMobile){
         return (
+            <><Nav />
             <div style={{height: "100%"}}>
                 <div style={{
                     display: "flex",
@@ -96,11 +98,14 @@ const Courses = () => {
                 }
                 </div>
             </div>
+            </>
         )
 
     }
     if(!isMobile) {
         return (
+            <>
+                <Nav />
             <div>
                 <div style={{display: "flex",
                     flexWrap: "nowrap",
@@ -127,6 +132,7 @@ const Courses = () => {
                     }
                 </div>
             </div>
+            </>
         );
     }
     return null;
