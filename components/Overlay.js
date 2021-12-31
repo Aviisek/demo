@@ -18,8 +18,25 @@ export function Nav() {
         setIsMobile(mobile);
     },[])
 
+    const navAnimate = useCallback(node => {
+        if (node !== null) {
+            const timelineIn = gsap.timeline({
+                delay: 1
+            })
+
+            timelineIn.fromTo(node, {
+                opacity: 0,
+            }, {
+                delay: 0.2,
+                duration: 1.5,
+                opacity: 1,
+                ease: 'expo.out',
+            }, 0)
+        }
+    }, [])
+
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} ref={navAnimate}>
             <Link href={"/"}>
                 {
                     isMobile == null ? <a></a> :
