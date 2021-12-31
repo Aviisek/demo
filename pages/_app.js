@@ -3,6 +3,7 @@ import {Nav} from "../components/Overlay";
 
 function MyApp({ Component, pageProps }) {
   return <>
+    <Nav />
     <Component {...pageProps} />
     </>
 }
