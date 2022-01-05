@@ -74,13 +74,13 @@ export function Nav() {
                 </li>
                 <li>
                     {/*<a className={styles.navitem} target="_blank" href="https://github.com/Aviisek" rel="noreferrer">Github</a>*/}
-                    <a className={styles.navitem}>Github</a>
+                    <a className={styles.navitem}>Blog</a>
                 </li>
                 <li>
                     {/*<a className={styles.navitem} target="_blank" href="https://www.linkedin.com/in/abhishek-k-513149124/"*/}
                     {/*   rel="noreferrer">LinkedIn*/}
                     {/*</a>*/}
-                    <a className={styles.navitem}>Linkedin</a>
+                    <a className={styles.navitem}>Github</a>
                 </li>
             </ul>
         </nav>
@@ -165,13 +165,7 @@ export function Overlay() {
     return (
         <div className={styles.wrapper}>
             <div ref={intro} className={styles.summary}  dangerouslySetInnerHTML={{
-                __html: createIntroMarkup("Hello There! 👋 I am Abhishek. \n \n " +
-                    "I am experienced Full stack software engineer and have worked on " +
-                    "Reliable, Scalable and Maintainable applications. \n " +
-                    "I have developed both server side applications " +
-                    "as well as client facing applications. \n " +
-                    "I have experience working with Java, Kotlin, ReactJs, NextJs, Golang, Database, Docker, " +
-                    "Kubernetes and everything related to the Internet. ")
+                __html: createIntroMarkup("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
             }}>
             </div>
 
